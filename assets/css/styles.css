@@ -11,6 +11,10 @@
   --h2title: 4vmin;
   --h3title: 3vmin;
   --paragraph: 2vmin;
+  --transition: .5s;
+  --white: #fff;
+  --grey: #182130;
+  --liBlue: #cae9ff;
 }
 
 html{
@@ -39,3 +43,60 @@ h3{
 p{
   font-size: var(--paragraph);
 }
+
+a{
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+/* Header */
+
+header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+}
+
+nav{
+  display: flex;
+  background-color: var(--grey);
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+
+  & img{
+    width: 12rem;
+    height: 12rem;
+  }
+
+  & ul{
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    align-items: center;  
+  }
+}
+
+li{
+  font-size: 1.9rem;
+}
+
+nav a:hover{
+  color: var(--liBlue);
+  font-size: 2rem;
+}
+
+.logo{
+  gap: 10rem;
+  display: flex;
+  justify-content: space-between;
+
+
+  & h2{
+    color: var(--white);
+  }
+}
+
