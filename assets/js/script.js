@@ -1,4 +1,3 @@
-// Carrossel funcional para as imagens
 const imagens = document.querySelectorAll('.carrossel-img');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
