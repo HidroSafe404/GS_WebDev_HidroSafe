@@ -14,7 +14,8 @@
   --transition: .5s;
   --white: #fff;
   --grey: #182130;
-  --liBlue: #cae9ff;
+  --blue: #294ab8;
+  --liBlue: #7ca3f8;
 }
 
 html{
@@ -62,7 +63,7 @@ header{
 
 nav{
   display: flex;
-  background-color: var(--grey);
+  background-color: var(--blue);
   flex-direction: row;
   justify-content: space-evenly;
   padding: 1rem;
@@ -100,3 +101,41 @@ nav a:hover{
   }
 }
 
+/* Inicio */
+
+.inicio{
+  background-image: linear-gradient(rgba(88, 130, 255, 0.432), rgba(83, 157, 226, 0.336)), url(../images/enchenteClaro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  & h1{
+    color: var(--white);
+  }
+}
+
+.inicio-content{
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn{
+  background-color: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 1rem;
+
+  &:hover{
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+  }
+}
