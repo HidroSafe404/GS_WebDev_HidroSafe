@@ -7,7 +7,7 @@
 
 :root{
   --radius: 7px;
-  --h1title: 5vmin;
+  --h1title: 9vmin;
   --h2title: 4vmin;
   --h3title: 3vmin;
   --paragraph: 2vmin;
@@ -21,7 +21,6 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body{
@@ -74,10 +73,10 @@ nav{
   }
 
   & ul{
-    list-style: none;
-    display: flex;
-    gap: 6rem;
-    align-items: center;  
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  align-items: center;  
   }
 }
 
@@ -116,6 +115,7 @@ nav a:hover{
   min-height: 100vh;
 
   & h1{
+
     color: var(--white);
   }
 }
@@ -139,3 +139,74 @@ nav a:hover{
     color: var(--blue);
   }
 }
+
+/* Quiz */
+
+.quiz{
+  background-color: #e4e4e4;
+  padding: 3rem;
+}
+
+.carrossel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.carrossel {
+    position: relative;
+    width: 50%;
+    min-height: 50vh;
+    background: #23272a;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #0006;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 18px;
+}
+
+.carrossel-img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0.3em 0.7em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+.carrossel-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.carrossel-btn.prev {
+  left: 1rem;
+}
+
+.carrossel-btn.next {
+  right: 1rem;
+}
+
