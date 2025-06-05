@@ -7,7 +7,7 @@
 
 :root{
   --radius: 7px;
-  --h1title: 5vmin;
+  --h1title: 9vmin;
   --h2title: 4vmin;
   --h3title: 3vmin;
   --paragraph: 2vmin;
@@ -140,6 +140,8 @@ nav a:hover{
   }
 }
 
+/* Quiz */
+
 .quiz{
   background-color: #e4e4e4;
   padding: 3rem;
@@ -244,6 +246,7 @@ nav a:hover{
   transition: all .7s;
   margin: 10% auto;
   cursor: pointer;
+  
 
   & a {
     color: var(--white);
@@ -265,5 +268,37 @@ nav a:hover{
 
     border: 1px solid var(--blue);
     background-color: transparent;
+  }
+}
+
+/* Sobre */
+
+.sobre{
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(1, 6, 20, 0.432), rgba(0, 3, 5, 0.664)), url(../images/bannerBLue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+}
+
+.sobre-content{
+  display: inherit;
+  flex-direction: column;
+  padding: 5rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  width: 50%;
+  min-height: 60vh;
+  justify-content: center;
+  background-color: rgba(87, 113, 143, 0.671);
+  gap: 4rem;
+
+  & h2{
+    text-align: center;
   }
 }
