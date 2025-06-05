@@ -303,6 +303,13 @@ nav a:hover{
   & h2{
     text-align: center;
   }
+
+  & p{
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    word-wrap: balance;
+  }
 }
 
 /* Contato */
