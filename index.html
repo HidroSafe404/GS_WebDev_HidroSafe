@@ -71,11 +71,36 @@
         Com alertas automáticos, mapas interativos e um painel web acessível, a Hidrosafe orienta evacuações seguras e mantém os cidadãos informados. É uma solução completa para reduzir impactos de enchentes em áreas urbanas.</p>
         </div>
     </section>
+    <!-- Contato -->
+    <section class="contato" id="contato">
+      <h1>Entre em contato conosco!</h1>
+      <form id="formContato" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <span class="erro" id="erro-nome"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="erro" id="erro-email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="20"></textarea>
+                    <span class="erro" id="erro-mensagem"></span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="sucesso" class="sucesso"></div>
+    </section> 
+    <!-- Fim contato -->
     <!-- Fim Sobre -->
   </main>
   <footer>
 
   </footer>
+  <script src="./assets/js/contato.js"></script>
   <script src="./assets/js/script.js" defer></script>
 </body>
 </html>
