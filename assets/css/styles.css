@@ -469,6 +469,34 @@ footer{
   transition: 0.3s;
 }
 
+/* Theme Switcher */
+.theme-switcher {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.theme-switcher button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switcher button:hover {
+  background: var(--liBlue);
+  color: var(--blue);
+}
+
 /* Responsividade */
 @media (max-width: 900px) {
   nav {
@@ -602,3 +630,114 @@ footer{
   }
 }
 
+body.dark-mode {
+  --white: #181c24;
+  --grey: #f7f7f7;
+  --blue: #484b66;
+  --liBlue: #5c6bc0;
+  --green: #388e3c;
+  --red: #e74c3c;
+  background: #181c24;
+  color: #f7f7f7;
+}
+
+body.dark-mode header,
+body.dark-mode nav{
+  background: #23272f;
+
+  & a{
+    color: #fff !important;
+  }
+
+  & h2{
+    color: #fff !important;
+  }
+
+}
+
+body.dark-mode nav a:hover{
+  color: var(--liBlue) !important;
+}
+body.dark-mode footer {
+  background: #23272f;
+  color: #fff;
+}
+
+
+
+body.dark-mode .inicio{
+  background-image: linear-gradient(rgba(14, 42, 114, 0.3), rgba(1, 2, 8, 0.9)), url(../images/bannerDark.jpg);
+
+  & h1{
+    color: #fff;
+  }
+}
+
+body.dark-mode .sobre{
+  background-image: linear-gradient(rgba(14, 42, 114, 0.3), rgba(1, 2, 8, 0.9)), url(../images/sobreDark.jpg);
+}
+
+body.dark-mode .contato,
+body.dark-mode .quiz-convite,
+body.dark-mode .sobre-content {
+  background: #23272f !important;
+  color: #f7f7f7 !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #23272f;
+  color: #f7f7f7;
+  border-color: #333a4a;
+}
+
+body.dark-mode .carrossel-btn{
+  background: rgba(160, 160, 160, 0.5);
+  &:hover{
+    background: #171718af;
+  }
+}
+
+body.green-mode {
+  --white: #f6fff6;
+  --grey: #1b2e1b;
+  --blue: #388e3c;
+  --liBlue: #7be495;
+  --green: #388e3c;
+  --red: #e74c3c;
+  background: #eafbe7;
+  color: #1b2e1b;
+}
+
+body.green-mode header,
+body.green-mode nav,
+body.green-mode footer {
+  background: #388e3c;
+  color: #fff;
+}
+
+body.green-mode .contato,
+body.green-mode .quiz-convite,
+body.green-mode .sobre-content {
+  background: #e0f7e9 !important;
+  color: #1b2e1b !important;
+}
+
+body.green-mode input,
+body.green-mode textarea {
+  background: #f6fff6;
+  color: #1b2e1b;
+  border-color: #7be495;
+}
+
+body.green-mode .contato h1{
+  color: #1b2e1b;
+}
+
+body.green-mode .inicio{
+  background-image: linear-gradient(rgba(29, 102, 14, 0.219), rgba(1, 2, 8, 0.9)), url(../images/bannerGreen.jpeg);
+}
+
+body.green-mode .sobre{
+  background-image: linear-gradient(rgba(28, 73, 19, 0.219), rgba(5, 15, 4, 0.9)), url(../images/sobreGreen.jpg);
+}
