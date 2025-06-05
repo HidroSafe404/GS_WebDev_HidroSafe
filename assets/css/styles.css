@@ -388,7 +388,7 @@ button[type="submit"]:hover {
 
 .erro {
   color: var(--red);
-  font-size: 1.15rem; /* Aumentado */
+  font-size: 1.15rem; 
   margin-top: 0.3rem;
   display: block;
   min-height: 1.2em;
@@ -399,7 +399,7 @@ button[type="submit"]:hover {
   color: var(--green);
   text-align: center;
   margin-top: 1.2rem;
-  font-weight: 700; /* Mais destaque */
+  font-weight: 700; 
   font-size: 1.25rem;
   letter-spacing: 0.2px;
 }
@@ -502,7 +502,7 @@ footer{
   nav {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Alinha logo à esquerda e hambúrguer à direita */
+    justify-content: space-between; 
     padding: 1rem 2rem;
     position: relative;
   }
@@ -513,7 +513,7 @@ footer{
   }
   .hamburger {
     display: flex;
-    margin-left: 0; /* Remove margem extra */
+    margin-left: 0; 
     z-index: 1001;
   }
   .lista-header {
@@ -556,7 +556,7 @@ footer{
   nav {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Alinha logo à esquerda e hambúrguer à direita */
+    justify-content: space-between; 
     padding: 1rem 2rem;
     position: relative;
   }
@@ -567,7 +567,7 @@ footer{
   }
   .hamburger {
     display: flex;
-    margin-left: 0; /* Remove margem extra */
+    margin-left: 0; 
     z-index: 1001;
   }
   .lista-header {
@@ -675,7 +675,7 @@ footer{
     z-index: 1000;
   }
   .lista-header.open {
-    height: 270px; /* aumente se necessário para caber os botões de tema */
+    height: 270px; 
     padding: 2rem 2rem 2rem 2rem;
   }
   .lista-header li {
