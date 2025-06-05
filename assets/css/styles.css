@@ -7,7 +7,7 @@
 
 :root{
   --radius: 7px;
-  --h1title: 9vmin;
+  --h1title: 5vmin;
   --h2title: 4vmin;
   --h3title: 3vmin;
   --paragraph: 2vmin;
@@ -21,6 +21,7 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -73,10 +74,10 @@ nav{
   }
 
   & ul{
-  list-style: none;
-  display: flex;
-  gap: 6rem;
-  align-items: center;  
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+    align-items: center;  
   }
 }
 
@@ -115,7 +116,6 @@ nav a:hover{
   min-height: 100vh;
 
   & h1{
-
     color: var(--white);
   }
 }
@@ -139,8 +139,6 @@ nav a:hover{
     color: var(--blue);
   }
 }
-
-/* Quiz */
 
 .quiz{
   background-color: #e4e4e4;
