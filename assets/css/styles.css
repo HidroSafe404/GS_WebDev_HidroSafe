@@ -16,6 +16,8 @@
   --grey: #182130;
   --blue: #294ab8;
   --liBlue: #7ca3f8;
+  --green: #388e3c;
+  --red: #e74c3c;
 }
 
 html{
@@ -302,3 +304,110 @@ nav a:hover{
     text-align: center;
   }
 }
+
+/* Contato */
+
+.contato{
+  max-width: 40%;
+  margin: 3.5rem auto 0 auto;
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(79,110,247,0.08);
+  min-height: 100vh;
+
+  & h1{
+  text-align: center;
+  color: #4f6ef7;
+  font-size: 4vmin;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.7rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2d3a4a;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+input, textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #e0e4ea;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f7f9fc;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  color: #2d3a4a;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus {
+  border: 1.5px solid #4f6ef7;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(79,110,247,0.07);
+}
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+button[type="submit"] {
+  background-color: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 2rem 0;
+  border-radius: 7px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79,110,247,0.08);
+  margin-top: 0.5rem;
+  transition: var(--transition);
+}
+
+button[type="submit"]:hover {
+  border: 1px solid var(--blue);
+  background: transparent;
+  box-shadow: 0 4px 16px rgba(79,110,247,0.13);
+  color: var(--blue);
+}
+
+.erro {
+  color: var(--red);
+  font-size: 1.15rem; /* Aumentado */
+  margin-top: 0.3rem;
+  display: block;
+  min-height: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+.sucesso {
+  color: var(--green);
+  text-align: center;
+  margin-top: 1.2rem;
+  font-weight: 700; /* Mais destaque */
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+}
+
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+#formContato {
+  width: 70%;
+  min-width: 320px;
+  min-width: 320px;
+}
+
