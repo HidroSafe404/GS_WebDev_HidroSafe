@@ -537,8 +537,18 @@ footer{
     padding: 2rem 2rem 2rem 2rem;
   }
   .lista-header li {
-    text-align: right;
+    text-align: center;
     width: 100%;
+  }
+  .theme-switcher {
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    gap: 1.2rem;
+  }
+  .lista-header .theme-switcher button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
   }
 }
 
@@ -581,7 +591,7 @@ footer{
     padding: 2rem 2rem 2rem 2rem;
   }
   .lista-header li {
-    text-align: right;
+    text-align: center;
     width: 100%;
   }
 
@@ -627,6 +637,60 @@ footer{
   }
   .footer-content {
     padding: 1rem !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hamburger {
+    display: flex;
+    margin-left: 0;
+    z-index: 1001;
+  }
+  .lista-header {
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--blue);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 60vw;
+    max-width: 300px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    box-shadow: 0 8px 32px #0002;
+    border-radius: 0 0 0 18px;
+    z-index: 1000;
+  }
+  .lista-header.open {
+    height: 270px; /* aumente se necessário para caber os botões de tema */
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .lista-header li {
+    text-align: center;
+    width: 100%;
+  }
+  .theme-switcher {
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    gap: 1.2rem;
+  }
+  .lista-header .theme-switcher button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.7rem;
   }
 }
 
@@ -696,6 +760,10 @@ body.dark-mode .carrossel-btn{
   &:hover{
     background: #171718af;
   }
+}
+
+body.dark-mode .hamburger span {
+  background: #fff !important;
 }
 
 body.green-mode {
