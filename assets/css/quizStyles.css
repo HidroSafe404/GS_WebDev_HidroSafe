@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --radius: 7px;
+  --h1title: 9vmin;
+  --h2title: 4vmin;
+  --h3title: 3vmin;
+  --paragraph: 2vmin;
+  --transition: .5s;
+  --white: #fff;
+  --grey: #182130;
+  --blue: #294ab8;
+  --liBlue: #7ca3f8;
+  --green: #388e3c;
+  --red: #e74c3c;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+h1{
+  font-size: var(--h1title);
+}
+
+h2{
+  font-size: var(--h2title);
+}
+
+h3{
+  font-size: var(--h3title);
+}
+
+p{
+  font-size: var(--paragraph);
+}
+
+
